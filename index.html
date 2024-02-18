@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Generator and Sorter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Array Generator and Sorter</h1>
+  <div class="input-group">
+    <label for="minNumForArr">Min Number:</label>
+    <input type="number" id="minNumForArr" placeholder="Min">
+  </div>
+  <div class="input-group">
+    <label for="maxNumForArr">Max Number:</label>
+    <input type="number" id="maxNumForArr" placeholder="Max">
+  </div>
+  <div class="input-group">
+    <label for="arrLength">Array Length:</label>
+    <input type="number" id="arrLength" placeholder="Length">
+  </div>
+  <button onclick="genArrButton()">Generate Array</button>
+
+  <div class="sort-buttons">
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="insertSort()">Insertion Sort</button>
+    <button onclick="selectSort()">Selection Sort</button>
+    <button onclick="qsButton()">Quick Sort</button>
+    <button onclick="msButton()">Merge Sort</button>
+  </div>
+
+  <textarea id="arrTextArea" rows="4" readonly></textarea>
+  <div id="timer" class="timer"></div>
+</div>
+<script src="hello.js"></script>
+</body>
+</html>
